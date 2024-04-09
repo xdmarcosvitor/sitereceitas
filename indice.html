@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Receitas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip:hover::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: calc(100% + 5px);
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            max-width: 300px; /* Defina a largura máxima do balãozinho */
+            overflow: hidden; /* Oculte o texto excedente */
+            text-overflow: ellipsis; /* Adicione uma elipse para indicar texto cortado */
+        }
+
+        .tooltip:hover::before {
+            opacity: 1;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><img src="/logo.png" alt="logo da Larica do Marcos"></a>
+        <nav class="links">
+            <ul>
+                <li><a href="indice.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="portfolio/main.html" class="tooltip" data-tooltip="Acessar meu portfólio">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="maincontainer">
+        <section class="indice">
+            <h2>Índice de Receitas</h2>
+            <ul class="recipes-list">
+                <li>
+                    <a href="receita6.html" class="tooltip" data-tooltip="Ceviche é um prato tradicional da culinária peruana, feito com peixe cru marinado em suco de limão ou lima, temperado com especiarias e servido com vegetais.">
+                        <img src="ceviche.jpg" alt="Ceviche">
+                        <span>Ceviche</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="receita2.html" class="tooltip" data-tooltip="Lasanha de Frango com Cream Cheese é uma deliciosa variação de lasanha feita com camadas de massa, frango desfiado, molho branco e cream cheese, gratinada com queijo derretido.">
+                        <img src="lasanha-frango.jpg" alt="Lasanha de Frango com Cream Cheese">
+                        <span>Lasanha de Frango com Cream Cheese</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="receita7.html" class="tooltip" data-tooltip="Lombinho de Porco Assado com Alecrim e Alho é uma receita simples e saborosa, em que o lombinho de porco é temperado com alecrim e alho, assado no forno até ficar dourado e suculento.">
+                        <img src="lombo-porco.jpg" alt="Lombinho de Porco Assado com Alecrim e Alho">
+                        <span>Lombinho de Porco Assado com Alecrim e Alho</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="receita10.html" class="tooltip" data-tooltip="Coxinha com Massa de Mandioca é uma versão especial da coxinha brasileira, em que a massa tradicional de farinha de trigo é substituída pela massa de mandioca, resultando em uma coxinha mais macia e saborosa.">
+                        <img src="coxinha.jpg" alt="Coxinha com Massa de Mandioca">
+                        <span>Coxinha com Massa de Mandioca</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="receita5.html" class="tooltip" data-tooltip="Brownie com Nozes é uma sobremesa irresistível, feita com uma massa de chocolate densa e fudgy, repleta de nozes crocantes e deliciosas. Ideal para os amantes de chocolate!">
+                        <img src="brownie-chocolate.jpeg" alt="Brownie com Nozes">
+                        <span>Brownie com Nozes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="receita4.html" class="tooltip" data-tooltip="Risoto de Cogumelos é um prato clássico da culinária italiana, em que o arroz arbóreo é cozido lentamente em caldo de legumes, misturado com cogumelos frescos, queijo parmesão e manteiga, resultando em um risoto cremoso e reconfortante.">
+                        <img src="risoto-cogumelo.jpg" alt="Risoto de Cogumelos">
+                        <span>Risoto de Cogumelos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="receita9.html" class="tooltip" data-tooltip="Pizza de Margherita é uma pizza tradicional italiana, coberta com molho de tomate, queijo mussarela fresco, tomate fatiado, folhas de manjericão fresco e azeite de oliva. Simples e deliciosa!">
+                        <img src="pizza.jpg" alt="Pizza de Margherita">
+                        <span>Pizza de Margherita</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="receita8.html" class="tooltip" data-tooltip="Creme Brulee é uma sobremesa clássica da culinária francesa, composta por uma deliciosa mistura de gemas de ovo, creme de leite, açúcar e baunilha, coberta com uma fina camada de açúcar caramelizado.">
+                        <img src="creme-brulee.jpg" alt="Creme Brulee">
+                        <span>Creme Brulee</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="receita1.html" class="tooltip" data-tooltip="Doce de Leite é um doce tradicional da culinária latino-americana, feito a partir do cozimento lento de leite com açúcar, resultando em uma sobremesa cremosa e caramelizada, perfeita para ser degustada pura, com frutas ou como ingrediente de outras receitas.">
+                        <img src="doce-de-leite.jpg" alt="Doce de Leite">
+                        <span>Doce de Leite</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="receita3.html" class="tooltip" data-tooltip="Sopa de Vegetais é uma receita reconfortante e saudável, feita com uma variedade de legumes frescos, como cenoura, abobrinha, batata, tomate e ervilha, cozidos em um caldo aromático até ficarem macios e saborosos.">
+                        <img src="sopa-vegetais.jpg" alt="Sopa de Vegetais">
+                        <span>Sopa de Vegetais</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Larica do Marcos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

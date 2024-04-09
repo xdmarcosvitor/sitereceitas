@@ -1,0 +1,149 @@
+body, h1, ul {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilize a lista de receitas */
+.recipes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 20px; /* Adicionando preenchimento interno */
+    margin: 0; /* Removendo margem */
+}
+
+.recipes-list li {
+    width: 250px; /* Largura fixa para todos os itens */
+    height: 300px; /* Altura fixa para todos os itens */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.recipes-list li a {
+    display: block;
+    text-decoration: none;
+    color: #4E6151;
+    position: relative; /* Para permitir o posicionamento do balão */
+}
+
+.recipes-list li img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.recipes-list li span {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo dos balões de informações */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip:hover::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4E6151;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: normal;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    max-width: 250px;
+}
+
+.tooltip:hover::before {
+    opacity: 1;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #FBDFDB;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #EFA5A0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4E6151;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: #d87c72;
+}
+
+.logo {
+    margin-left: 20px; /* Adiciona um espaçamento à esquerda */
+}
+
+.logo img {
+    max-width: 100px; /* Ajusta o tamanho da logo */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Define a altura do corpo para ocupar toda a altura da janela do navegador */
+}
+
+header {
+    height: 100px; /* Ajusta a altura do cabeçalho */
+}
+
+main {
+    min-height: calc(100vh - 200px); /* Define a altura mínima do conteúdo principal, subtraindo a altura do cabeçalho e do rodapé */
+}
+
+footer {
+    height: 100px; /* Ajusta a altura do rodapé */
+}
+
+main {
+    margin-top: 200px; /* Adiciona margem superior para deslocar o conteúdo para baixo */
+}
+
+.indice h2 {
+    text-align: center;
+}
+
+.indice h2 {
+    margin: auto;
+    text-align: center; /* Ainda é bom para garantir a centralização horizontal */
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto a página rola */
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
